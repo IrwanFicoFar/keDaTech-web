@@ -1,113 +1,165 @@
-import Image from 'next/image'
+import Image from "next/image";
+import { Logo } from "./components/Logo";
+import { CloudImage1, CloudImage2 } from "./components/CloudImage";
+
+import Image1 from "../../public/image1.png";
+import Image2 from "../../public/image2.png";
+import Company1 from "../../public/company1.png";
+import Company2 from "../../public/company2.png";
+import Company3 from "../../public/company3.png";
+import Company4 from "../../public/company4.png";
+import BasicImage from "../../public/priceSquare0.png";
+import BusinessImage from "../../public/priceSquare.png";
+import EntrepreneurImage from "../../public/priceSquare2.png";
+import { CardChecklist, CardPrice } from "./components/Card";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main className="min-h-screen relative">
+      <Logo />
+      <CloudImage1 />
+      <CloudImage2 />
+      <div className="absolute z-20">
+        {/* section 1 */}
+        <div className="px-24 pt-24 ">
+          <div className="text-xl flex justify-end px-44 mt-36">
+            <p className="w-[60%] text-center">
+              easiest way to manage the cash flow of your business. Everything
+              can be integrated online, access it from anywhere without
+              limitations.
+            </p>
+          </div>
+          <div className="ml-16 mt-36 text-xl">
+            <p className="w-[30%]">
+              “Type keywords relative to your project to find the illustrations
+              you need”
+            </p>
+          </div>
+          <Image
+            src={Image1}
+            width={500}
+            height={500}
+            alt="image section 1"
+            className="mt-12"
+          />
         </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+        {/* section 2 */}
+        <div className="grid mt-72 grid-cols-2 z-20">
+          <div className="ml-32 justify-center flex flex-col gap-16">
+            <p className="uppercase text-2xl font-bold">about us</p>
+            <div className="flex flex-col gap-7">
+              <p className="text-xl">
+                Founded in 2019, Grow has emerged as a leading digital company
+                in business management assistant applications. Our key features
+                include cash flow management, sales analysis, and seamless
+                online integration and storage of sales data.
+              </p>
+              <p className="text-xl">
+                With a sincere commitment to customer service, we have gained
+                the trust of numerous companies in managing their sales data.
+                Join us now and make Grow your preferred platform to advance
+                your business. Our team is prepared to drive your company&apos;s
+                success. Together, let&apos;s propel your business to the
+                pinnacle of success!
+              </p>
+            </div>
+          </div>
+          <div className="">
+            <Image
+              src={Image2}
+              width={700}
+              height={700}
+              alt="image section 2"
+            />
+          </div>
+        </div>
+        {/* section 3 */}
+        <div className="px-32 pb-44">
+          <div className="mt-36 flex gap-10 justify-end">
+            <Image
+              src={Company1}
+              width={150}
+              height={150}
+              objectFit="fit"
+              alt="company 1"
+            />
+            <Image
+              src={Company2}
+              width={150}
+              height={150}
+              objectFit="fit"
+              alt="company 2"
+            />
+            <Image
+              src={Company3}
+              width={200}
+              height={150}
+              objectFit="fit"
+              alt="company 3"
+            />
+            <Image
+              src={Company4}
+              width={230}
+              height={150}
+              objectFit="fit"
+              alt="company 4"
+            />
+          </div>
+          <div className="flex flex-col gap-10 mt-64">
+            <p className="uppercase text-3xl  font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-cyan-500 to-purple-500">
+              {" "}
+              choose your plan
+            </p>
+            <div className="grid grid-cols-3 gap-10 px-32 mt-24">
+              <CardPrice
+                imageResource={BasicImage}
+                title="basic"
+                price={500}
+                // eslint-disable-next-line react/no-children-prop
+                children={
+                  <>
+                    <CardChecklist description="Mencatat barang masuk" />
+                    <CardChecklist description="Mencatat barang keluar" />
+                    <CardChecklist description="Mencatat hasil keuntungan" />
+                  </>
+                }
+              />
+              <CardPrice
+                imageResource={BusinessImage}
+                title="business"
+                price={750}
+                // eslint-disable-next-line react/no-children-prop
+                children={
+                  <>
+                    <CardChecklist description="Mencatat barang masuk" />
+                    <CardChecklist description="Mencatat barang keluar" />
+                    <CardChecklist description="Menganalisa penjualan dengan CHART" />
+                    <CardChecklist description="Support 7x24 Jam" />
+                  </>
+                }
+              />
+              <CardPrice
+                imageResource={EntrepreneurImage}
+                title="entrepreneur"
+                price={1000}
+                // eslint-disable-next-line react/no-children-prop
+                children={
+                  <>
+                    <CardChecklist description="Mencatat barang masuk" />
+                    <CardChecklist description="Mencatat barang keluar" />
+                    <CardChecklist description="Mencatat hasil keuntungan" />
+                    <CardChecklist description="Support 7x24 Jam" />
+                    <CardChecklist description="Export data ke Excel" />
+                    <CardChecklist description="AI Prediksi Penghasilan" />
+                  </>
+                }
+              />
+            </div>
+          </div>
+        </div>
+        {/* footer */}
+        <div></div>
       </div>
     </main>
-  )
+  );
 }
