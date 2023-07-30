@@ -29,7 +29,9 @@ export const Footer = () => {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-24 mt-16 mx-8 text-white">
           <div className="flex flex-col sm:col-span-2 gap-10">
-            <p className="capitalize text-xl font-semibold">contact us</p>
+            <p className="capitalize text-xl font-semibold" id="contact">
+              contact us
+            </p>
             <div className="flex flex-col gap-3">
               <div className="text-lg flex gap-3 items-center">
                 <Image src={Map} width={44} height={44} alt="address" />
