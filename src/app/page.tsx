@@ -13,16 +13,17 @@ import BusinessImage from "../../public/priceSquare.png";
 import EntrepreneurImage from "../../public/priceSquare2.png";
 import { CardChecklist, CardPrice } from "./components/Card";
 import { Footer } from "./components/Footer";
+import { Navbar } from "./components/Navbar";
 
 export default function Home() {
   return (
     <main className="min-h-screen relative">
-      <Logo />
       <CloudImage1 />
       <CloudImage2 />
       <div className="absolute z-20">
+        <Navbar />
         {/* section 1 */}
-        <div className="px-24 pt-24 ">
+        <div className="px-24 pt-16 ">
           <div className="text-xl flex justify-end px-44 mt-36">
             <p className="w-[60%] text-center">
               easiest way to manage the cash flow of your business. Everything
