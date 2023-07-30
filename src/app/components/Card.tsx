@@ -1,3 +1,5 @@
+"use client";
+
 import Image, { StaticImageData } from "next/image";
 import React, { ReactNode } from "react";
 
@@ -17,7 +19,10 @@ export const CardPrice = ({
   children: ReactNode;
 }) => {
   return (
-    <div className="mb-[100%] mt-[10%] hover:scale-110 hover:-translate-y-2 duration-300 ease-in-out">
+    <button
+      className="mb-[100%] mt-[10%] hover:scale-110 hover:-translate-y-2 duration-300 ease-in-out"
+      onClick={() => alert(`${title} Selected`)}
+    >
       <div className="relative drop-shadow-lg hover:drop-shadow-2xl">
         <Image
           src={BackCover}
@@ -63,7 +68,7 @@ export const CardPrice = ({
           </div>
         </div>
       </div>
-    </div>
+    </button>
   );
 };
 
@@ -77,7 +82,7 @@ export const CardChecklist = ({ description }: { description: string }) => {
         alt="back cover"
         className=""
       />
-      <p>{description}</p>
+      <p className="text-start">{description}</p>
     </div>
   );
 };

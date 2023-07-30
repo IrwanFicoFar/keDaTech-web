@@ -13,7 +13,7 @@ export const Logo = () => {
         className="relative"
       />
       <div className="absolute top-6 left-4 md:top-10 md:left-6 lg:top-14 lg:left-8 xl:top-14 xl:left-16 2xl:top-24 2xl:left-16">
-        <Link href="">
+        <Link href="/">
           <Image
             src={"/logo.png"}
             width={200}
