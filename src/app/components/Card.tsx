@@ -1,9 +1,9 @@
 import Image, { StaticImageData } from "next/image";
 import React, { ReactNode } from "react";
 
-import CoverBody from "../../../public/cover.png";
 import BackCover from "../../../public/back-cover.png";
 import Checklist from "../../../public/checklist.png";
+import CoverBody from "../../../public/cover.png";
 
 export const CardPrice = ({
   imageResource,

@@ -1,16 +1,16 @@
 import Image from "next/image";
 
 import { CloudImage1, CloudImage2 } from "./components/CloudImage";
-import Image1 from "../../public/image1.png";
-import Image2 from "../../public/image2.png";
+import EntrepreneurImage from "../../public/priceSquare2.png";
+import { CardChecklist, CardPrice } from "./components/Card";
+import BusinessImage from "../../public/priceSquare.png";
+import BasicImage from "../../public/priceSquare0.png";
 import Company1 from "../../public/company1.png";
 import Company2 from "../../public/company2.png";
 import Company3 from "../../public/company3.png";
 import Company4 from "../../public/company4.png";
-import BasicImage from "../../public/priceSquare0.png";
-import BusinessImage from "../../public/priceSquare.png";
-import EntrepreneurImage from "../../public/priceSquare2.png";
-import { CardChecklist, CardPrice } from "./components/Card";
+import Image1 from "../../public/image1.png";
+import Image2 from "../../public/image2.png";
 import { Footer } from "./components/Footer";
 import { Navbar } from "./components/Navbar";
 
