@@ -16,17 +16,19 @@ import CopyRight from "../../../public/copy.png";
 
 export const Footer = () => {
   return (
-    <div className="relative">
-      <CloudImage3 />
-      <div className="absolute top-[40%] z-10 px-32 w-full">
-        <div className="flex gap-5 items-center">
+    <footer
+      className="relative bg-cover bg-top"
+      style={{ backgroundImage: "url('/cloud-3.png')" }}
+    >
+      <div className="z-10 px-10 md:px-24 lg:px-32 w-full">
+        <div className="flex gap-5 items-center pt-[400px]">
           <Image src={ImageLogo} width={72} height={72} alt="logo" />
           <p className="Capitalize text-2xl font-semibold text-white">
             PT Grow Teknologi
           </p>
         </div>
-        <div className="grid grid-cols-4 mt-16 mx-8 text-white">
-          <div className="flex flex-col col-span-2 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-24 mt-16 mx-8 text-white">
+          <div className="flex flex-col sm:col-span-2 gap-10">
             <p className="capitalize text-xl font-semibold">contact us</p>
             <div className="flex flex-col gap-3">
               <div className="text-lg flex gap-3 items-center">
@@ -88,13 +90,13 @@ export const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="flex gap-2 items-center mx-8 mt-32">
+        <div className="flex gap-2 items-center p-8 mt-12 sm:mt-32">
           <Image src={CopyRight} width={24} height={24} alt="copy right" />
           <p className="Capitalize text-lg text-white">
             2023 PT Grow Teknologi. All rights reserved
           </p>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
