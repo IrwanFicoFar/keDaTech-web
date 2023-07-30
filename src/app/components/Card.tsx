@@ -31,7 +31,7 @@ export const CardPrice = ({
           alt="back cover"
           className="absolute lg:top-0 z-10"
         />
-        <div className="flex justify-center">
+        <div className="w-full flex justify-center items-center">
           <div className="absolute -top-10 hover:-top-32 duration-300 ease-in-out z-20 flex justify-center">
             <Image
               src={imageResource}
@@ -40,7 +40,7 @@ export const CardPrice = ({
               alt="back cover"
               className="w-[80%]"
             />
-            <div className="absolute flex flex-col gap-8 justify-center mt-12 z-20">
+            <div className="absolute flex flex-col gap-2 justify-center mt-10 z-20">
               <p className="text-xl text-white font-bold uppercase text-center">
                 {title}
               </p>
