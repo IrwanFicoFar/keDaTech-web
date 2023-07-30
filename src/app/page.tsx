@@ -45,17 +45,20 @@ export default function Home() {
           />
         </div>
         {/* section 2 */}
-        <div className="grid mt-72 grid-cols-2 z-20" id="about">
-          <div className="ml-32 justify-center flex flex-col gap-16">
+        <div
+          className="grid mt-[100%] sm:mt-[70%] md:mt-[40%] lg:mt-[20%] lg:grid-cols-2 z-20"
+          id="about"
+        >
+          <div className="mx-10 sm:mx-16 justify-center flex flex-col gap-16">
             <p className="uppercase text-2xl font-bold">about us</p>
             <div className="flex flex-col gap-7">
-              <p className="text-xl">
+              <p className="md:text-xl">
                 Founded in 2019, Grow has emerged as a leading digital company
                 in business management assistant applications. Our key features
                 include cash flow management, sales analysis, and seamless
                 online integration and storage of sales data.
               </p>
-              <p className="text-xl">
+              <p className="md:text-xl">
                 With a sincere commitment to customer service, we have gained
                 the trust of numerous companies in managing their sales data.
                 Join us now and make Grow your preferred platform to advance
@@ -65,7 +68,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="">
+          <div className="flex justify-center">
             <Image
               src={Image2}
               width={700}

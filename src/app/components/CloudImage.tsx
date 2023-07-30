@@ -3,7 +3,7 @@ import React from "react";
 
 export const CloudImage1 = () => {
   return (
-    <div className="absolute top-[400px] right-0 z-10 w-[60%]">
+    <div className="absolute top-[400px] right-0 z-10 w-full h-[40%] sm:w-[80%] md:w-[60%] ">
       <Image
         src={"/cloud-1.png"}
         width={1000}

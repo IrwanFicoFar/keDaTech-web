@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 export const Logo = () => {
@@ -13,14 +14,16 @@ export const Logo = () => {
         className="relative"
       />
       <div className="absolute top-6 left-4 md:top-10 md:left-6 lg:top-14 lg:left-8 xl:top-14 xl:left-16 2xl:top-24 2xl:left-16">
-        <Image
-          src={"/logo.png"}
-          width={200}
-          height={200}
-          objectFit="cover"
-          alt="logo"
-          className="relative w-24 lg:w-32 xl:w-36"
-        />
+        <Link href="">
+          <Image
+            src={"/logo.png"}
+            width={200}
+            height={200}
+            objectFit="cover"
+            alt="logo"
+            className="relative w-24 lg:w-32 xl:w-36"
+          />
+        </Link>
       </div>
     </div>
   );
