@@ -1,11 +1,12 @@
 "use client";
 
-import React, { useState } from "react";
-import { Logo } from "./Logo";
-import Link from "next/link";
-import Burger from "../../../public/Stat@3x.png";
-import Image from "next/image";
 import { Transition, Menu } from "@headlessui/react";
+import { useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
+
+import Burger from "../../../public/Stat@3x.png";
+import { Logo } from "./Logo";
 
 export const Navbar = () => {
   const [show, setShow] = useState<boolean>(false);

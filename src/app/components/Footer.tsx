@@ -1,17 +1,14 @@
-import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-import { CloudImage3 } from "./CloudImage";
-import ImageLogo from "../../../public/logo-only.png";
-
-import Map from "../../../public/Pin_fill@3x.png";
 import Email from "../../../public/Message_fill@3x.png";
 import Telpon from "../../../public/Phone_fill@3x.png";
-import Facebook from "../../../public/Facebook.png";
-import Twitter from "../../../public/Twitter.png";
+import ImageLogo from "../../../public/logo-only.png";
 import Instagram from "../../../public/Instagram.png";
+import Facebook from "../../../public/Facebook.png";
 import LinkedIn from "../../../public/LinkedIn.png";
+import Map from "../../../public/Pin_fill@3x.png";
+import Twitter from "../../../public/Twitter.png";
 import CopyRight from "../../../public/copy.png";
 
 export const Footer = () => {
