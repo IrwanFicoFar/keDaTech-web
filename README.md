@@ -10,4 +10,4 @@ berikut beberapa tech stack yang digunakan untuk membuat website ini:
 
 ## Deploy on Vercel
 
-akses deploy di :
+akses deploy di : https://ke-da-tech-web.vercel.app/
