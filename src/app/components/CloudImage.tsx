@@ -18,7 +18,7 @@ export const CloudImage1 = () => {
 export const CloudImage2 = () => {
   return (
     <>
-      <div className="absolute top-[1600px] left-0 z-10 w-[30%]">
+      <div className="absolute top-[1700px] sm:top-[1800px] md:top-[1900px] lg:top-[1500px] xl:top-[1700px]  left-0 z-10 sm:w-[500px] md:w-[30%]">
         <Image
           src={"/cloud-2a.png"}
           width={1000}
@@ -27,7 +27,7 @@ export const CloudImage2 = () => {
           alt="cloud Image 1"
         />
       </div>
-      <div className="absolute top-[1900px] left-0 z-10 w-[20%]">
+      <div className="absolute top-[2000px] sm:top-[2100px] md:top-[2100px] lg:top-[1700px] xl:top-[2000px] left-0 z-10 w-[50%] sm:w-[300px] md:w-[20%]">
         <Image
           src={"/cloud-2b.png"}
           width={1000}

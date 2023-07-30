@@ -18,7 +18,7 @@ export const Footer = () => {
   return (
     <div className="relative">
       <CloudImage3 />
-      <div className="absolute top-[40%] z-50 px-32 w-full">
+      <div className="absolute top-[40%] z-10 px-32 w-full">
         <div className="flex gap-5 items-center">
           <Image src={ImageLogo} width={72} height={72} alt="logo" />
           <p className="Capitalize text-2xl font-semibold text-white">

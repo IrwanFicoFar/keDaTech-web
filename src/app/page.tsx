@@ -78,14 +78,15 @@ export default function Home() {
           </div>
         </div>
         {/* section 3 */}
-        {/* <div className="px-32 pb-44">
-          <div className="mt-36 flex gap-10 justify-end">
+        <div className="px-10 md:px-16 lg:px-24 pb-64 z-50 ">
+          <div className="sm:ml-10 md:ml-24 lg:ml-16 xl:ml-32 2xl:ml-44 mt-[200px] sm:mt-[160px] md:mt-[130px] lg:mt-[200px] xl:mt-[270px] grid grid-cols-2  md:grid-cols-5 gap-5 items-center">
             <Image
               src={Company1}
               width={150}
               height={150}
               objectFit="fit"
               alt="company 1"
+              className="md:col-start-2"
             />
             <Image
               src={Company2}
@@ -111,10 +112,9 @@ export default function Home() {
           </div>
           <div className="flex flex-col gap-10 mt-64" id="pricing">
             <p className="uppercase text-3xl  font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-cyan-500 to-purple-500">
-              {" "}
               choose your plan
             </p>
-            <div className="grid grid-cols-3 gap-10 px-32 mt-24">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-96 sm:gap-x-5 md:gap-y-96 md:gap-x-16 lg:gap-10 xl:gap-16 px-5 mt-24">
               <CardPrice
                 imageResource={BasicImage}
                 title="basic"
@@ -160,9 +160,9 @@ export default function Home() {
               />
             </div>
           </div>
-        </div> */}
+        </div>
         {/* footer */}
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </main>
   );
