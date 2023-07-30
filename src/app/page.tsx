@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Logo } from "./components/Logo";
-import { CloudImage1, CloudImage2 } from "./components/CloudImage";
+import { CloudImage1, CloudImage2, CloudImage3 } from "./components/CloudImage";
 
 import Image1 from "../../public/image1.png";
 import Image2 from "../../public/image2.png";
@@ -12,6 +12,7 @@ import BasicImage from "../../public/priceSquare0.png";
 import BusinessImage from "../../public/priceSquare.png";
 import EntrepreneurImage from "../../public/priceSquare2.png";
 import { CardChecklist, CardPrice } from "./components/Card";
+import { Footer } from "./components/Footer";
 
 export default function Home() {
   return (
@@ -44,7 +45,7 @@ export default function Home() {
           />
         </div>
         {/* section 2 */}
-        <div className="grid mt-72 grid-cols-2 z-20">
+        <div className="grid mt-72 grid-cols-2 z-20" id="about">
           <div className="ml-32 justify-center flex flex-col gap-16">
             <p className="uppercase text-2xl font-bold">about us</p>
             <div className="flex flex-col gap-7">
@@ -105,7 +106,7 @@ export default function Home() {
               alt="company 4"
             />
           </div>
-          <div className="flex flex-col gap-10 mt-64">
+          <div className="flex flex-col gap-10 mt-64" id="pricing">
             <p className="uppercase text-3xl  font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-cyan-500 to-purple-500">
               {" "}
               choose your plan
@@ -158,7 +159,7 @@ export default function Home() {
           </div>
         </div>
         {/* footer */}
-        <div></div>
+        <Footer />
       </div>
     </main>
   );

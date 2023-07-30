@@ -39,3 +39,17 @@ export const CloudImage2 = () => {
     </>
   );
 };
+
+export const CloudImage3 = () => {
+  return (
+    <div className="bottom-0 z-10 w-full">
+      <Image
+        src={"/cloud-3.png"}
+        width={1700}
+        height={500}
+        objectFit="cover"
+        alt="cloud Image 1"
+      />
+    </div>
+  );
+};
