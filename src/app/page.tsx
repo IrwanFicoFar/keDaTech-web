@@ -1,7 +1,6 @@
 import Image from "next/image";
-import { Logo } from "./components/Logo";
-import { CloudImage1, CloudImage2, CloudImage3 } from "./components/CloudImage";
 
+import { CloudImage1, CloudImage2 } from "./components/CloudImage";
 import Image1 from "../../public/image1.png";
 import Image2 from "../../public/image2.png";
 import Company1 from "../../public/company1.png";
@@ -23,18 +22,18 @@ export default function Home() {
       <div className="absolute z-20">
         <Navbar />
         {/* section 1 */}
-        <div className="px-24 pt-16 ">
-          <div className="text-xl flex justify-end px-44 mt-36">
-            <p className="w-[60%] text-center">
+        <div className="px-10 md:px-16 lg:px-24">
+          <div className="text-md sm:text-xl md:text-2xl flex font-extrabold justify-end px-10 sm:px-24 md:px-32 lg:px-16 xl:px-44 mt-10 sm:mt-16 lg:mt-36">
+            <p className="w-full lg:w-[80%] xl:w-[70%] 2xl:w-[60%] text-center bg-clip-text text-transparent bg-gradient-to-br from-cyan-500 via-blu-400 to-purple-500">
               easiest way to manage the cash flow of your business. Everything
               can be integrated online, access it from anywhere without
               limitations.
             </p>
           </div>
-          <div className="ml-16 mt-36 text-xl">
-            <p className="w-[30%]">
-              “Type keywords relative to your project to find the illustrations
-              you need”
+          <div className="lg:ml-16 mt-10 sm:mt-16 md:mt-24 md:text-xl">
+            <p className="w-64 sm:w-[40%] md:w-[50%] lg:w-[30%]">
+              “effortless control, seamless access, and a direct path to
+              happiness.”
             </p>
           </div>
           <Image
@@ -42,7 +41,7 @@ export default function Home() {
             width={500}
             height={500}
             alt="image section 1"
-            className="mt-12"
+            className="mt-5 md:mt-12 w-36 sm:w-44 md:w-56 lg:w-72 xl:w-96"
           />
         </div>
         {/* section 2 */}
@@ -76,7 +75,7 @@ export default function Home() {
           </div>
         </div>
         {/* section 3 */}
-        <div className="px-32 pb-44">
+        {/* <div className="px-32 pb-44">
           <div className="mt-36 flex gap-10 justify-end">
             <Image
               src={Company1}
@@ -158,7 +157,7 @@ export default function Home() {
               />
             </div>
           </div>
-        </div>
+        </div> */}
         {/* footer */}
         <Footer />
       </div>

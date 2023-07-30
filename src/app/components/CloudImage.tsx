@@ -46,7 +46,7 @@ export const CloudImage3 = () => {
       <Image
         src={"/cloud-3.png"}
         width={1700}
-        height={500}
+        height={1700}
         objectFit="cover"
         alt="cloud Image 1"
       />
