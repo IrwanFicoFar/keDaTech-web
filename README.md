@@ -11,3 +11,10 @@ berikut beberapa tech stack yang digunakan untuk membuat website ini:
 ## Deploy on Vercel
 
 akses deploy di : https://ke-da-tech-web.vercel.app/
+
+## Design Figma
+
+akses design figma di : https://www.figma.com/file/WfwHUQbJIrsSuOzAFiRJPK/KeDa-Tech?type=design&node-id=0%3A1&mode=dev
+
+
+
