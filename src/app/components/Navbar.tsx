@@ -7,6 +7,7 @@ import Link from "next/link";
 
 import Burger from "../../../public/Stat@3x.png";
 import { Logo } from "./Logo";
+import { AnimationCloudImage } from "./Animation";
 
 export const Navbar = () => {
   const [show, setShow] = useState<boolean>(false);
