@@ -19,6 +19,7 @@ export default function Home() {
   return (
     <main className="min-h-screen relative">
       <CloudImage1 />
+      <CloudImage2 />
       <div className="absolute z-20">
         <AnimationCloudImage direction="top" duration={1}>
           <Navbar />
@@ -50,7 +51,7 @@ export default function Home() {
             />
           </AnimationCloudImage>
         </div>
-        <CloudImage2 />
+
         {/* section 2 */}
         <div
           className="grid mt-[100%] sm:mt-[70%] md:mt-[40%] lg:mt-[20%] lg:grid-cols-2 z-20"
